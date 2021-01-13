@@ -1,0 +1,224 @@
+.jobs-container {
+    position: relative;
+    padding: 200px 0 140px 0;
+    background: #FFFFFF;
+}
+
+.jobs {
+    width: 1410px;
+    margin: auto;
+}
+
+.company-bg {
+    width: 1410px;
+    height: 180px;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    box-shadow: 0px 20px 80px #7474741A;
+    background: white;
+    border-radius: 20px;
+    z-index: 20;
+    padding: 0 110px;
+}
+
+.company {
+    width: 100%;
+    height: 100%;
+    background: url('../assets/comp@2x.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.cat-outer-container > p {
+    text-align: center;
+    font: normal normal bold 60px/72px Inter;
+    letter-spacing: 0.84px;
+    color: #181818;
+}
+
+.cat-outer-container button {
+    width: 294px;
+    height: 62px;
+    background: #1C2333 0% 0% no-repeat padding-box;
+    border-radius: 52px;
+    text-align: center;
+    font: normal normal normal 22px/26px Inter;
+    letter-spacing: 0.44px;
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+}
+
+.cat-inner-container {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    width: 440px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 20px #7474741A;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    box-shadow: 0px 30px 40px #74747440;
+    transform: translateY(-5px);
+}
+
+.category-card .cat-head {
+    font: normal normal normal 36px/52px Inter;
+    letter-spacing: 0.72px;
+    margin: 40px 0;
+    color: #181818;
+}
+
+.category-card .cat-detail {
+    font: normal normal normal 20px/33px Inter;
+    letter-spacing: 0.4px;
+    color: #747474;
+}
+
+.category-card .cat-image {
+    height: 75px;
+    width: 75px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-card .cat-image > img {
+    height: 55%;
+}
+
+.cat-head > p {
+    margin-bottom: 0;
+}
+
+.extra-card {
+    display: none;
+}
+
+.fade-in {
+	animation: fadeIn 1s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1410px) {
+    .company-bg {
+        width: 900px;
+        height: 130px;
+        top: -65px;
+    }
+    .jobs-container {
+        padding: 180px 10px 140px 10px;
+    }
+    .jobs {
+        width: 100%;
+        margin: auto;
+    }
+    .cat-outer-container > p {
+        font: normal normal bold 50px/60px Inter;
+    }
+    .category-card {
+        width: 340px;
+        height: 320px;
+        box-shadow: 0px 8px 16px #7474741A;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .category-card .cat-head {
+        font: normal normal normal 30px/35px Inter;
+        margin: 20px 0;
+    }
+    
+    .category-card .cat-detail {
+        font: normal normal normal 16px/20px Inter;
+    }
+    .category-card .cat-image {
+        height: 60px;
+        width: 60px;
+        border-radius: 15px;
+    }
+    .category-card .cat-image > img {
+        height: 50%;
+    }
+    .cat-outer-container button {
+        width: 180px;
+        height: 45px;
+        font: normal normal normal 12px/16px Inter;
+        border-radius: 25px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .company-bg {
+        width: 95%;
+        height: 90px;
+        top: -45px;
+        padding: 0 50px;
+        border-radius: 10px;
+    }
+    .jobs-container {
+        padding: 100px 10px 50px 10px;
+    }
+    .cat-outer-container > p {
+        text-align: center;
+        font: normal normal bold 30px/40px Inter;
+    }
+    .category-card {
+        /* width: 100%; */
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .company-bg {
+        width: 95%;
+        height: 60px;
+        top: -30px;
+        padding: 0 20px;
+    }
+    .cat-inner-container {
+        margin: 30px 0;
+    }
+    
+    .category-card {
+        height: 280px;
+    }
+    .category-card .cat-head {
+        font: normal normal normal 25px/22px Inter;
+    }
+    .category-card .cat-image {
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+    }
+    .category-card .cat-image > img {
+        height: 50%;
+    }
+}

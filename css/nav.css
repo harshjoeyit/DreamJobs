@@ -1,0 +1,99 @@
+.navbar {
+    background:#F8F9FB !important;
+    padding: 40px 80px 20px 80px;
+}
+
+.navbar > span {
+    background-image: url('../assets/logo.png');
+    width: 197px;
+    height: 32px;
+    margin: 4px 20px 0 0;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.nav-btns > button {
+    outline: none;
+    border: none;
+    width: 156px;
+    height: 60px;
+    text-align: center;
+    font: normal normal normal 20px/24px Inter;
+    letter-spacing: 0.4px;
+    color: #0F47C0;
+    border: 2px solid #0F47C0;
+    border-radius: 30px;
+    background: transparent;
+}
+
+.nav-btns > button:last-child {
+    color: #F8F9FB;
+    background-color: #0F47C0;
+}
+
+.navbar-nav > a {
+    font: normal normal normal 18px/22px Inter !important;
+    letter-spacing: 0.72px !important;
+    color: #181818 !important;
+    margin: 0 15px;
+}
+
+.navbar-toggler-icon {
+    background: none !important;
+    color: #181818 !important;
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 1410px) {
+    .navbar {
+        padding: 40px 10px 20px 10px;
+    }
+    .navbar > span {
+        background-image: url('../assets/logo.png');
+        width: 160px;
+        height: 25px;
+        margin: 2px 0 0 0;
+    }
+    .navbar-nav > a {
+        font: normal normal normal 16px/20px Inter !important;
+        margin: 0 5px;
+    }
+    .nav-btns > button {
+        width: 100px;
+        height: 40px;
+        font: normal normal normal 14px/20px Inter;
+        border-radius: 20px;
+    }
+    .nav-btns {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .navbar {
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .navbar-collapse {
+        margin: 20px 0 0 0;
+    }
+    .nav-btns {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        width: 170px;
+    }
+    .nav-btns > button {
+        width: 80px;
+        height: 30px;
+        font: normal normal normal 12px/15px Inter;
+        border-radius: 15px;
+    }
+}

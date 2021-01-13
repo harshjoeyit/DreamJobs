@@ -1,0 +1,222 @@
+.tstmol-container {
+    position: relative;
+    padding: 90px 0;
+}
+
+.tstmol {
+    width: 1410px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tstmol-image-container {
+    width: 40%;
+    background: url('../assets/Ellipse.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.tstmol-details {
+    width: 60%;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tstmol-details .head {
+    font: normal normal bold 80px/100px Inter;
+    letter-spacing: 1.12px;
+    color: #181818;
+    margin-bottom: 100px;
+}
+
+.tstmol-entry .quote {
+    font: normal normal normal 22px/33px Inter;
+    letter-spacing: 0.44px;
+    color: #747474;
+}
+
+.psnl-details {
+    margin: 50px 0 40px 0;
+}
+
+.psnl-details .name {
+    font: normal normal normal 32px/38px Inter;
+    letter-spacing: 0.45px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.psnl-details .prof {
+    font: normal normal normal 22px/26px Inter;
+    letter-spacing: 0.31px;
+    color: #181818;
+    opacity: 0.5;
+}
+
+.switch-btns {
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switch-btns div {
+    width: 57px;
+    height: 57px;;
+    margin-top: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.switch-btns .prev {
+    background: url('../assets/prev.png');
+}
+
+.switch-btns .next {
+    background: url('../assets/next.png');
+}
+
+.group-btn1, .group-btn2 {
+    position: absolute;
+    height: 73px;
+    width: 73px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.group-btn1 {
+    top: 64px;
+    left: 64px;
+    background: url('../assets/grpl.png');
+}
+
+.group-btn2 {
+    bottom: 64px;
+    right: 64px;
+    background: url('../assets/grp.png');
+}
+
+.shape {
+    position: absolute;
+    height: 200px;
+    width: 20px;
+    right: 64px;
+    top: 100px;
+    background: url('../assets/Shape.png');
+}
+
+
+@media only screen and (max-width: 1410px) {
+    .tstmol-container {
+        padding: 90px 20px;
+    }
+    .tstmol {
+        width: 100%;
+    }
+    .tstmol-details {
+        padding-left: 40px;
+    }
+    .tstmol-details .head {
+        font: normal normal bold 60px/70px Inter;
+        margin-bottom: 40px;
+    }
+    .tstmol-entry .quote {
+        font: normal normal normal 20px/26px Inter;
+    }
+    .psnl-details {
+        margin: 30px 0 20px 0;
+    }
+    .psnl-details .name {
+        font: normal normal normal 25px/38px Inter;
+        margin-bottom: 0;
+    }
+    .psnl-details .prof {
+        font: normal normal normal 16px/26px Inter;
+    }
+    .switch-btns div {
+        margin-top: 20px;
+        width: 40px;
+        height: 40px;
+        background-size: contain !important;
+    }
+    .group-btn1 {
+        top: 25px;
+        left: 25px;
+    }
+    .group-btn2 {
+        bottom: 25px;
+        right: 25px;
+    }
+    .shape {
+        right: 25px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .tstmol-details {
+        padding-left: 20px;
+    }
+    .tstmol-details .head {
+        font: normal normal bold 30px/40px Inter;
+        margin-bottom: 30px;
+    }
+    .tstmol-entry .quote {
+        font: normal normal normal 16px/20px Inter;
+    }
+    .psnl-details {
+        margin: 25px 0 10px 0;
+    }
+    .psnl-details .name {
+        font: normal normal normal 22px/30px Inter;
+        margin-bottom: 0;
+    }
+    .psnl-details .prof {
+        font: normal normal normal 16px/26px Inter;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tstmol-container {
+        padding: 50px 20px;
+    }
+    .tstmol {
+        flex-direction: column;
+    }
+    .tstmol-details {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .tstmol-image-container {
+        width: 100%;
+        height: 400px;
+    }
+    .switch-btns {
+        margin: 15px auto 0 auto;
+    }
+    .switch-btns div {
+        margin: 0;
+    }
+    .group-btn1, .group-btn2 {
+        height: 60px;
+        width: 60px;
+    }
+    .group-btn1 {
+        top: 15px;
+        left: 15px;
+    }
+    .group-btn2 {
+        bottom: 15px;
+        right: 15px;
+    }
+    .shape {
+        right: 15px;
+    }
+}

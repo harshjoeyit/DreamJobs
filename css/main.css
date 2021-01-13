@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --white_1: #FFFFFF;
+    --white_2: #F8F9FB;
+    --black_1: #181818;
+    --black_2: #1C2333;
+    --blue_1: #0F47C0;
+    --grey_1: #747474;
+    --pink_1: #FAB8C4;
+    --white_3: #7474741A;
+    --grey_2: #74747440;
+    --white_4: #F6F7F9;
+    --yellow: #FFDA55;
+    --white_5: #FAB8C41A;
+    --grey_3: #0000000D;
+    --black_3: #1B2E3D;
+    --black_4: #101E2A;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.25s;
+}
+
+button:active, button:focus {
+    outline: none;
+}
