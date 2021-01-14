@@ -43,7 +43,7 @@ const tstmols = [
         vestibulum. Maecenas ipsum lacus, lacinia quis`,
         name: 'Edwards Macio',
         prof: 'React Developer',
-        bgImg: 'url("../assets/devEd.png")'
+        bgImg: '#FFF9DA'
     },
     {
         quote: ` pellentesque eu, pretium quis, sem.
@@ -51,7 +51,7 @@ const tstmols = [
         vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venena`,
         name: 'Salman Khan',
         prof: 'Android Developer',
-        bgImg: 'url("../assets/salKhan.png")'
+        bgImg: '#E2F4FF'
     },
     {
         quote: ` culus mus.
@@ -59,7 +59,7 @@ const tstmols = [
         Nulla consequat massa quis enimbulum eget. Class aptent taciti sociosqu ad litora torquent`,
         name: 'Peter Theil',
         prof: 'C# Developer',
-        bgImg: 'url("../assets/peter.png")'
+        bgImg: '#FEDEDE'
     }
 ]
 
@@ -73,7 +73,7 @@ let index = 0;
 quote.textContent = tstmols[0].quote;
 devName.textContent = tstmols[0].name;
 prof.textContent = tstmols[0].prof;
-bgImg.style.backgroundImage = tstmols[0].bgImg;
+bgImg.style.background = tstmols[0].bgImg;
 
 
 const handleChange = (clickedBtn) => {
@@ -86,7 +86,7 @@ const handleChange = (clickedBtn) => {
     quote.textContent = tstmols[index].quote;
     devName.textContent = tstmols[index].name;
     prof.textContent = tstmols[index].prof;
-    bgImg.style.backgroundImage = tstmols[index].bgImg;
+    bgImg.style.background = tstmols[index].bgImg;
 }
 
 const prev = document.querySelector('.switch-btns .prev');
